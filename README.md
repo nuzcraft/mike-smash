@@ -10,8 +10,8 @@
 - https://sheepolution.com/learn/book/bonus/vscode specifically to set up VS Code debugging
   - there is a whole section at the botton for setting up builds using the `makelove` python package. You might need to `pip install setuptools` as well
   - if you don't want to use the task in vscode, the command is `makelove --config make_all.toml`
+  - if you have the extensions installed, you should by good to just press `F5` to debug as well as `ctrl + shift + B` to build
 
 ## Tutorial
 
 - https://sheepolution.com/learn/book/contents
-- https://sheepolution.com/learn/book/bonus/vscode specifically to set up VS Code debugging
