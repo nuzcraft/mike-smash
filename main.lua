@@ -12,6 +12,9 @@ function love.load()
 
     r1 = Rectangle(100, 100, 200, 50)
     r2 = Circle(350, 80, 40)
+
+    myImage = love.graphics.newImage("sheep.png")
+    love.graphics.setBackgroundColor(1, 1, 1)
 end
 
 function love.update(dt)
@@ -23,6 +26,10 @@ end
 function love.draw()
     r1:draw()
     r2:draw()
+    love.graphics.setColor(1, 0.78, 0.15, 0.5)
+    love.graphics.draw(myImage, 100, 100)
+    love.graphics.setColor(1, 1, 1)
+    love.graphics.draw(myImage, 200, 100)
 end
 
 local love_errorhandler = love.errorhandler
