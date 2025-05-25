@@ -3,24 +3,21 @@ if arg[2] == "debug" then
 end
 
 function love.load()
-    x = 100
-    fruits = {"apple", "banana"}
-    table.insert(fruits, "orange")
+    tick = require "tick"
+    Object = require "classic"
+    require "rectangle"
+
+    r1 = Rectangle()
+    r2 = Rectangle()
 end
 
 function love.update(dt)
-    if love.keyboard.isDown("right") then
-        x = x + 100 * dt
-    elseif love.keyboard.isDown("left") then
-        x = x - 100 * dt
-    end
+    tick.update(dt)
+    r1.update(r1, dt)
 end
 
 function love.draw()
-    love.graphics.rectangle("line", x, 50, 200, 150)
-    for i, frt in ipairs(fruits) do
-        love.graphics.print(frt, 100, 100 + i * 50)
-    end
+    r1.draw(r1)
 end
 
 local love_errorhandler = love.errorhandler
