@@ -24,6 +24,7 @@ function love.update(dt)
 end
 
 function love.draw()
+    love.graphics.setColor(0, 0, 0)
     r1:draw()
     r2:draw()
     love.graphics.setColor(1, 0.78, 0.15, 0.5)
