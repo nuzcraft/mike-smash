@@ -3,6 +3,8 @@ if arg[2] == "debug" then
     require("lldebugger").start()
 end
 
+io.stdout:setvbuf("no") -- Disable output buffering for immediate console output
+
 function love.load()
     Object = require "libs.classic"
     require "classes.player"
